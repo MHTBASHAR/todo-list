@@ -10,16 +10,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="/app/images/person.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module" defer></script>
-    <title>Todo App</title>
+    <title>List Á Faire</title>
 </head>
 
 <body>
+    <header class="header">
+        <h1>Liste Á Faire</h1>
+    </header>
     <div class="root">
         <div class="container">
             <div class="todo-controls">
-                <input type="text" placeholder="enter your todo" class="todo-controls__input-add" data-input-add-todo />
+                <input type="text" placeholder="entrez votre tâche" class="todo-controls__input-add" data-input-add-todo />
                 <button type="button" class="btn btn-add" data-add-todo-btn>
                     ajouter une tâche
                 </button>
@@ -38,7 +42,7 @@
                 </p>
 
                 <div class="todo-controls__filter">
-                    <input type="text" placeholder="find your todo" class="todo-controls__input-filter"
+                    <input type="text" placeholder="trouvez votre tâche" class="todo-controls__input-filter"
                         data-input-filter-todo />
                 </div>
 
@@ -75,6 +79,10 @@
             </button>
         </section>
     </template>
+
+    <footer>
+        <p>&copy; <span id="yr"></span> MAHAMAT BACHAR. Tous droits réservés.</p>
+    </footer>
 </body>
 
 </html>
